@@ -16,11 +16,11 @@ public:
     }
 };
 
-int mian(void){
+int main(void){
     Temporary(100);
     cout << "Temporary object created." << endl;
     Temporary(200).ShowTempInfo();
-    // const Temporary &ref=Temporary(300);
+    const Temporary &ref=Temporary(300);
     cout << "Temporary object created." << endl;
     return 0;
 }
